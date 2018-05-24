@@ -4,17 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Strona ta jest portfolio Dawida Gawałkiewicza, znajdziesz tutaj strony internetowe które wykonałem, kontakt do mnie, jak również moje CV">
+    <meta name="description" content="Strona ta jest portfolio Dawida Gawałkiewicza, znajdziesz tutaj strony internetowe które wykonałem, kontakt do mnie, jak również moje CV. Mam nadzieję, że będziemy razem współpracować!">
     <meta name="keywords" content="portfolio, codeme, Dawid, Gawałkiewicz">
+    <meta property="og:url"                content="http://www.codeme.eu" />
+    <meta property="og:type"               content="website" /> 
+    <meta property="og:title"              content="Dawid Gawałkiewicz - portfolio" />
+    <meta property="og:description"        content="Witaj na moim portfolio. Znajdziesz tutaj strony internetowe, które wykonałem, kontakt jak i również moje CV." />
+    <meta property="og:image"              content="img/my-photo.jpg" />
     <title>Dawid Gawałkiewicz - portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Raleway:400,500,600,800&amp;subset=latin-ext" rel="stylesheet">
     <link rel=icon href=favicon.png type="image/png">
     <link rel="stylesheet" href="css/font-mfizz.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="js/owl.carousel.css">
 <!-- Globalny tag witryny (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-35642274-2"></script>
 <script>
@@ -31,59 +37,84 @@
         <header class="header row">
             <nav class="navbar navbar--sticky container-fluid">
                 <div class="container">
-                    <div class="navbar__logo col-xs-6">
-                        <a href="#header" class="navbar__logo--link"><img alt="Brand" src="img/logo.png" class="navbar__logo--image img-responsive"></a>
+                    <div class="navbar__logo  col-6">
+                        <a href="#header" class="navbar__logo--link"><img alt="Brand" src="img/logo.png" class="navbar__logo--image img-fluid"></a>
                     </div>
                 </div>
             </nav>
 
             <div class="header__content container" id="header">
-                <h3 class="header__heading">Kodowanie stron<br>to moja pasja!</h3>
+                <h3 class="header__heading text-center text-md-left">Kodowanie stron<span class="d-block">to moja pasja!</span></h3>
                 <p class="header__body">Cześć, nazywam się Dawid i jestem programistą. Poświęć chwilę na zapoznanie się z moim portfolio, a być może będziemy wspólnie pracować?</p>
-                <a href="#portfolio" class="header__btn btn">moje portfolio</a>
-                <a href="#portfolio" class="header__btn btn">pracowałem dla</a>
-                <a href="#contact" class="header__btn btn">skontaktuj się ze mną</a>
+                <div class="header__group__btn text-center text-md-left">
+                        <a href="http://blog.codeme.eu/" class="header__btn btn d-block d-md-inline-block" target="_blank">mój blog</a>
+                        <a href="#about" class="header__btn btn d-block d-md-inline-block">o mnie</a>
+                        <a href="#portfolio" class="header__btn btn d-block d-md-inline-block">portfolio</a>
+                        <a href="#contact" class="header__btn btn d-block d-md-inline-block"> napisz do mnie </a>
+                </div>
             </div>
         </header>
         <section class="experts row">
-            <div class="experts__body container">
+            <div class="experts__body container" id="about">
                 <h3 class="experts__heading">O mnie</h3>
-                <div class="experts__item expert col-xs-10 col-sm-4 col-md-4 col-lg-4">
-                    <img src="img/default.jpg" alt="Zdjęcie Dawida Gawałkiewicza" class="expert__photo img-responsive">
+                <div class="row">
+                <div class="experts__item expert  col-10 col-sm-4 col-md-4 col-lg-4">
+                    <img src="img/my-photo.jpg" alt="Zdjęcie Dawida Gawałkiewicza" class="expert__photo img-fluid">
                     <div class="expert__info">
                         <h4 class="expert__name">Dawid Gawałkiewicz</h4>
                         <h5 class="expert__role">Front-end Developer</h5>
-                        <p class="expert__desc">Rocznik 1991, studiuję filozofię, zawodowo programuję. Od dziesięciu lat interesuję się informatyką, od roku koduję. W wolnych chwilach piszę teksty, pochłaniam kilogramy książek, oglądam filmy czy seriale. Oprócz tego uwielbiam grać w szachy, planszówki i pokera.</p>
+                        <p class="expert__desc">Rocznik 1991, studiuję filozofię, od maja 2016 zawodowo programuję. W wolnych chwilach piszę teksty, na przykład na <a href="http://blog.codeme.eu/" target="_blank">mojego programistycznego bloga</a>, pochłaniam kilogramy książek, oglądam filmy czy seriale. Oprócz tego uwielbiam grać w szachy, planszówki i pokera.</p>
                     </div>
                 </div>
-                <div class="we-do__body">
-                    <div class="we-do_wrapper col-xs-12 col-sm-7 col-md-6 col-lg-6">
-                        <h3 class="we-do__heading">Technologie, które obecnie poznaje:</h3>
-                        <ul class="we-do__list works">
-                            <li class="works__item pages">Strony tworzę opierając się na <i class="fa fa-html5 tech" aria-hidden="true"></i><i class="fa fa-css3 tech" aria-hidden="true"></i><i class="icon-javascript tech"></i></li>
-                            <li class="works__item blogs">Czasami korzystam również z <i class="icon-php tech"></i><i class="icon-mysql tech"></i></li>
-                            <li class="works__item advanced">Pracując w zespole używam <i class="fa fa-github tech"></i></li>
-                            <li class="works__item landing">Strony często stawiam razem z CMSami<i class="fa fa-wordpress tech" aria-hidden="true"></i><i class="fa fa-drupal tech" aria-hidden="true"></i><i class="fa fa-joomla tech" aria-hidden="true"></i></li>
-                            <li class="works__item webshops">Uczę się też używać frameworków takich jak Bootstrap czy Foundation.</li>
-                            <li class="works__item portals">I preprocessorów takich jak SASS czy LESS.</li>
-                        </ul>
-                    </div>
-                </div>
+                <div class="col-md-6 pl-0 pr-0">
+                        <div class="about-text-left">
+                            <div class="tab">
+                                    <button class="tablinks text-uppercase" onclick="openAbout(event, 'AboutFirst')" id="defaultOpen">Technologie które obecnie poznaje</button>
+                                    <button class="tablinks text-uppercase" onclick="openAbout(event, 'AboutSecond')">Mój poziom znajomości technologii</button>
+                                  </div>
+                                  
+                                  <div id="AboutFirst" class="tabcontent p-4 p-md-3 p-lg-5">
+                                        <ul class="we-do__list works text-center text-md-left">
+                                                <li class="works__item pages">Strony tworzę opierając się na <span class="d-block d-md-inline"><i class="fa fa-html5 tech" aria-hidden="true"></i><i class="fa fa-css3 tech" aria-hidden="true"></i><i class="icon-javascript tech"></i></span></li>
+                                                <li class="works__item blogs">Czasami korzystam również z <span class="d-block d-md-inline"><i class="icon-php tech"></i><i class="icon-mysql tech"></i></span></li>
+                                                <li class="works__item advanced">Pracując w zespole używam <span class="d-block d-md-inline"><i class="fa fa-github tech"></i></span></li>
+                                                <li class="works__item landing">Strony często stawiam razem z CMSami <span class="d-block d-md-inline"><i class="fa fa-wordpress tech" aria-hidden="true"></i><i class="fa fa-drupal tech" aria-hidden="true"></i><i class="fa fa-joomla tech" aria-hidden="true"></i></span></li>
+                                                <li class="works__item webshops">Używam też frameworków takich jak Bootstrap czy Foundation.</li>
+                                                <li class="works__item portals">I preprocessorów: SASS i LESS.</li>
+                                            </ul>
+                                  </div>
+                                  
+                                  <div id="AboutSecond" class="tabcontent pt-3 pb-3 p-md-3 p-lg-5">
+                                    <div class="slider responsive mt-lg-5 mt-5">
+                                        <div class="single-skill">
+                                            <img src="img/skills/my-html-skill-lvl.png" class="img-fluid" alt="mój poziom zaawansowania">
+                                        </div>
+                                        <div class="single-skill">
+                                                <img src="img/skills/my-css3-skill-level.png" class="img-fluid" alt="mój poziom zaawansowania">
+                                        </div>
+                                        <div class="single-skill">
+                                                <img src="img/skills/my-jquery-skill-level.png" class="img-fluid" alt="mój poziom zaawansowania">
+                                        </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                </div>
+            </div>
             </div>
         </section>
         <section class="cooperate row" id="cooperate">
             <div class="cooperate-body container">
-                <div class="cooperate__heading col-xs-12">
+                <div class="cooperate__heading  ">
                     <h3 class="cooperate__header">Pracowałem jak dotąd dla:</h3>
                 </div>
                 <div class="cooperate-items">
-                    <div class="cooperate-item col-xs-12 col-md-4">
+                    <div class="cooperate-item   col-md-4">
                         <img class="item__image" src="img/cooperate/logo-change.png">
                     </div>
-                    <div class="cooperate-item col-xs-12 col-md-4">
+                    <div class="cooperate-item   col-md-4">
                         <img class="item__image" src="img/cooperate/logo-dom-w-radosci.png">
                     </div>
-                    <div class="cooperate-item col-xs-12 col-md-4">
+                    <div class="cooperate-item   col-md-4">
                         <img class="item__image" src="img/cooperate/logo-opiekun-bloga.png">
                     </div>
                 </div>
@@ -243,7 +274,8 @@
         <section class="contact row" id="contact">
             <div class="contact__body container">
                 <h3 class="contact__heading">Nie czekaj, skontaktuj się</h3>
-                <div class="contact__wrapper--left col-xs-12 col-sm-6 col-md-6">
+                <div class="row">
+                <div class="contact__wrapper--left col-sm-6 col-md-6">
                     <ul class="contact__methods">
                         <li class="contact__item">
                             <i class="fa fa-phone fa-lg" aria-hidden="true"></i>
@@ -273,7 +305,7 @@
 
                     </ul>
                 </div>
-                <div class="contact__wrapper--right col-xs-12 col-sm-6 col-md-6">
+                <div class="contact__wrapper--right col-sm-6 col-md-6">
                     <form method="post" action="contact.php" class="contact__form form">
                         <input type="text" name="user_name" placeholder="imię i nazwisko" class="form__field form__field--name">
 
@@ -287,16 +319,17 @@
                     </form>
                 </div>
             </div>
+        </div>
         </section>
         <footer class="footer row">
             <div class="footer__body container">
-                <p class="footer__copyright text-center">&copy; 2017 CODEME</p>
+                <p class="footer__copyright text-center text-uppercase">&copy; 2016-<?php echo date("Y"); ?> CodeMe</p>
             </div>
         </footer>
     </div>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-    <script src="js/owl.carousel.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/slick.js"></script>
     <script>
         $(function() {
             $('a[href*="#"]:not([href="#"])').click(function() {
@@ -314,6 +347,48 @@
         });
 
     </script>
+    <script>
+    function openAbout(evt, AboutName) {
+    // Declare all variables
+    var i, tabcontent, tablinks;
+
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    // Show the current tab, and add an "active" class to the button that opened the tab
+    document.getElementById(AboutName).style.display = "block";
+    evt.currentTarget.className += " active";
+} 
+
+
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+
+
+</script>
+<script>
+    $(document).ready(function(){
+        $('.responsive').slick({
+  dots: false,
+  autoplay: true,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 1,
+  slidesToScroll: 1
+});
+});
+		
+</script>
 </body>
 
 </html>
