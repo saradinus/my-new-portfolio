@@ -87,13 +87,13 @@
                                   <div id="AboutSecond" class="tabcontent pt-3 pb-3 p-md-3 p-lg-5">
                                     <div class="slider responsive mt-lg-5 mt-5">
                                         <div class="single-skill">
-                                            <img src="img/skills/my-html-skill-lvl.png" class="img-fluid" alt="mój poziom zaawansowania">
+                                            <img src="img/skills/my-html-skill-lvl.jpg" class="img-fluid" alt="mój poziom zaawansowania">
                                         </div>
                                         <div class="single-skill">
-                                                <img src="img/skills/my-css3-skill-level.png" class="img-fluid" alt="mój poziom zaawansowania">
+                                                <img src="img/skills/my-css3-skill-level.jpg" class="img-fluid" alt="mój poziom zaawansowania">
                                         </div>
                                         <div class="single-skill">
-                                                <img src="img/skills/my-jquery-skill-level.png" class="img-fluid" alt="mój poziom zaawansowania">
+                                                <img src="img/skills/my-jquery-skill-level.jpg" class="img-fluid" alt="mój poziom zaawansowania">
                                         </div>
                                     </div>
                                   </div>
@@ -102,171 +102,205 @@
             </div>
             </div>
         </section>
-        <section class="cooperate row" id="cooperate">
+        <section class="cooperate row  mt-sm-5 mt-3" id="cooperate">
             <div class="cooperate-body container">
-                <div class="cooperate__heading  ">
-                    <h3 class="cooperate__header">Pracowałem jak dotąd dla:</h3>
+                    <div class="row">
+                <div class="cooperate__heading col-md-12">
+                              <h3 class="cooperate__header">Pracowałem jak dotąd dla:</h3>
+                    </div>
                 </div>
-                <div class="cooperate-items">
-                    <div class="cooperate-item   col-md-4">
-                        <img class="item__image" src="img/cooperate/logo-change.png">
+                <div class="cooperate-items row text-center">
+                    <div class="cooperate-item   col-md-2 offset-md-1">
+                        <a href="#" target="_blank"><img class="item__image img-fluid" src="img/cooperate/logo-change.png"></a>
                     </div>
-                    <div class="cooperate-item   col-md-4">
-                        <img class="item__image" src="img/cooperate/logo-dom-w-radosci.png">
+                    <div class="cooperate-item   col-md-2">
+                            <a href="#" target="_blank"><img class="item__image img-fluid" src="img/cooperate/logo-dom-w-radosci.png"></a>
                     </div>
-                    <div class="cooperate-item   col-md-4">
-                        <img class="item__image" src="img/cooperate/logo-opiekun-bloga.png">
+                    <div class="cooperate-item   col-md-2">
+                            <a href="#" target="_blank"><img class="item__image img-fluid" src="img/cooperate/logo-opiekun-bloga.png"></a>
+                    </div>
+                    <div class="cooperate-item   col-md-2">
+                            <a href="#" target="_blank"><img class="item__image img-fluid" src="img/cooperate/kei_logo.png"></a>
+                    </div>
+                    <div class="cooperate-item   col-md-2">
+                            <a href="#" target="_blank"><img class="item__image img-fluid" src="img/cooperate/space-way-logo.png"></a>
                     </div>
                 </div>
             </div>
         </section>
         <section class="portfolio row" id="portfolio">
             <div class="portfolio-body container">
-                <div class="portfolio__heading col-md-8">
-                    <h3 class="portfolio__header">Niektóre z dotychczasowych stron jakie wykonałem:</h3>
+                <div class="row">
+                        <div class="portfolio__heading col-md-12">
+                                <h3 class="portfolio__header">Strony internetowe wykonane przeze mnie dla:</h3>
+                            </div>
+                </div>
+            <div class="row mt-3">
+                <div class="portfolio__examples col-md-12">
+                        <div class="about-text-left">
+                                <div class="tab">
+                                        <button class="tablinks text-uppercase col-3" onclick="openSite(event, 'SitesFirst')" id="defaultOpen">SpaceWay</button>
+                                        <button class="tablinks text-uppercase col-3" onclick="openSite(event, 'SitesSec')">Opiekun Bloga</button>
+                                        <button class="tablinks text-uppercase col-3" onclick="openSite(event, 'SitesThi')">KEI</button>
+                                        <button class="tablinks text-uppercase col-3" onclick="openSite(event, 'SitesFou')">Freelance</button>
+                                      </div>
+                                      
+                                      <div id="SitesFirst" class="tabcontent p-4 p-md-3 p-lg-5">
+                                        <div class="portfolio-items">
+                
+                                            <div class="portfolio-item">
+                                                <div class="item-info">
+                                                    <div class="item-info__wrapper">
+                                                        <h3 class="item-info__title">Apa Blog</h3>
+                                                        <p class="item-info__category">Strona dla zagranicznego klienta</p>
+                                                        <a href="http://kmakowski.nazwa.pl/wp/" target="_blank"><i class="item-info__icon fa fa-search" aria-hidden="true"></i></a>
+                                                    </div>
+                                                </div>
+                                                <img class="item__image" src="img/sites/apablog.PNG">
+                                            </div>
+                            
+                            
+                                            <div class="portfolio-item">
+                                                <div class="item-info">
+                                                    <div class="item-info__wrapper">
+                                                        <h3 class="item-info__title">Copyright D.G.</h3>
+                                                        <p class="item-info__category">Strona w której prezentuje najważniejsze teksty, które dotychczas napisałem</p>
+                                                        <a href="http://www.pazaak.stronazen.pl/copyright/" target="_blank"><i class="item-info__icon fa fa-search" aria-hidden="true"></i></a>
+                                                    </div>
+                                                </div>
+                                                <img class="item__image" src="img/sites/copyright.PNG">
+                                            </div>
+                            
+                            
+                                            <div class="portfolio-item">
+                                                <div class="item-info">
+                                                    <div class="item-info__wrapper">
+                                                        <h3 class="item-info__title">Domy Opieki Polska</h3>
+                                                        <p class="item-info__category">Strona dla firmy reklamującej domy opieki</p>
+                                                        <a href="http://domyopiekipolska.pl/" target="_blank"><i class="item-info__icon fa fa-search" aria-hidden="true"></i></a>
+                                                    </div>
+                                                </div>
+                                                <img class="item__image" src="img/sites/domyopiekipolska.PNG">
+                                            </div>
+                            
+                            
+                                            <div class="portfolio-item">
+                                                <div class="item-info">
+                                                    <div class="item-info__wrapper">
+                                                        <h3 class="item-info__title">Glass and Mirrors</h3>
+                                                        <p class="item-info__category">Strona sklepu dla zagranicznego klienta</p>
+                                                        <a href="http://www.bknyglassandmirror.com/p/home.html" target="_blank"><i class="item-info__icon fa fa-search" aria-hidden="true"></i></a>
+                                                    </div>
+                                                </div>
+                                                <img class="item__image" src="img/sites/glassandmirrors.PNG">
+                                            </div>
+                            
+                            
+                                            <div class="portfolio-item">
+                                                <div class="item-info">
+                                                    <div class="item-info__wrapper">
+                                                        <h3 class="item-info__title">My Cinema Paradiso</h3>
+                                                        <p class="item-info__category">Strona Darka Kuźmy na której przedstawia swoje przemyślenia filmowe</p>
+                                                        <a href="http://mycinemaparadiso.com/" target="_blank"><i class="item-info__icon fa fa-search" aria-hidden="true"></i></a>
+                                                    </div>
+                                                </div>
+                                                <img class="item__image" src="img/sites/mycinemaparadiso.PNG">
+                                            </div>
+                            
+                            
+                                            <div class="portfolio-item">
+                                                <div class="item-info">
+                                                    <div class="item-info__wrapper">
+                                                        <h3 class="item-info__title">PhotoShoot Space</h3>
+                                                        <p class="item-info__category">Strona zagranicznej firmy oferującej sprzęt fotograficzny do wynajęcia</p>
+                                                        <a href="http://www.space4photoshoots.com/" target="_blank"><i class="item-info__icon fa fa-search" aria-hidden="true"></i></a>
+                                                    </div>
+                                                </div>
+                                                <img class="item__image" src="img/sites/photoshoot.PNG">
+                                            </div>
+                            
+                            
+                                            <div class="portfolio-item">
+                                                <div class="item-info">
+                                                    <div class="item-info__wrapper">
+                                                        <h3 class="item-info__title">Rehabphysio</h3>
+                                                        <p class="item-info__category">Strona rehabilitantki z Wielkiej Brytanii</p>
+                                                        <a href="http://rehabphysio.co.uk/" target="_blank"><i class="item-info__icon fa fa-search" aria-hidden="true"></i></a>
+                                                    </div>
+                                                </div>
+                                                <img class="item__image" src="img/sites/rehabphysio.PNG">
+                                            </div>
+                            
+                            
+                                            <div class="portfolio-item">
+                                                <div class="item-info">
+                                                    <div class="item-info__wrapper">
+                                                        <h3 class="item-info__title">Dietetyk Równowaga</h3>
+                                                        <p class="item-info__category">Strona dietetyk z Głogowa</p>
+                                                        <a href="http://dietetyk-rownowaga.pl/" target="_blank"><i class="item-info__icon fa fa-search" aria-hidden="true"></i></a>
+                                                    </div>
+                                                </div>
+                                                <img class="item__image" src="img/sites/rownowagadietetyk.PNG">
+                                            </div>
+                            
+                                            <div class="portfolio-item">
+                                                <div class="item-info">
+                                                    <div class="item-info__wrapper">
+                                                        <h3 class="item-info__title">Skrajnie Skończony blog</h3>
+                                                        <p class="item-info__category">Strona na której zapisuje swoje przemyślenia</p>
+                                                        <a href="http://www.pazaak.stronazen.pl/moj-blog/" target="_blank"><i class="item-info__icon fa fa-search" aria-hidden="true"></i></a>
+                                                    </div>
+                                                </div>
+                                                <img class="item__image" src="img/sites/skrajnieskonczony.PNG">
+                                            </div>
+                            
+                                            <div class="portfolio-item">
+                                                <div class="item-info">
+                                                    <div class="item-info__wrapper">
+                                                        <h3 class="item-info__title">Zadanie testowe</h3>
+                                                        <p class="item-info__category">Które musiałem wykonać w ramach rekrutacji w krótkim terminie</p>
+                                                        <a href="http://www.pazaak.stronazen.pl/zadanie/1/" target="_blank"><i class="item-info__icon fa fa-search" aria-hidden="true"></i></a>
+                                                    </div>
+                                                </div>
+                                                <img class="item__image" src="img/sites/selement.png">
+                                            </div>
+                                            <div class="portfolio-item">
+                                                <div class="item-info">
+                                                    <div class="item-info__wrapper">
+                                                        <h3 class="item-info__title">Miejsce na kolejny projekt</h3>
+                                                        <p class="item-info__category">i jego opis</p>
+                                                        <a href="" target=""><i class="item-info__icon fa fa-search" aria-hidden="true"></i></a>
+                                                    </div>
+                                                </div>
+                                                <img class="item__image" src="img/sites/services-photo-03.png">
+                                            </div>
+                            
+                                            <div class="portfolio-item">
+                                                <div class="item-info">
+                                                    <div class="item-info__wrapper">
+                                                        <h3 class="item-info__title">Miejsce na kolejny projekt</h3>
+                                                        <p class="item-info__category">i jego opis</p>
+                                                        <a href="" target=""><i class="item-info__icon fa fa-search" aria-hidden="true"></i></a>
+                                                    </div>
+                                                </div>
+                                                <img class="item__image" src="img/sites/services-photo-04.png">
+                                            </div>
+                                        </div>
+                                      </div>
+                                      
+                                      <div id="SitesSec" class="tabcontent pt-3 pb-3 p-md-3 p-lg-5">
+                
+                                      </div>
+                                      <div id="SitesThi" class="tabcontent pt-3 pb-3 p-md-3 p-lg-5">
+                
+                                    </div>
+                                    <div id="SitesFou" class="tabcontent pt-3 pb-3 p-md-3 p-lg-5">
+                
+                                    </div>
+                                    </div>
                 </div>
             </div>
-            <div class="portfolio-items">
-
-                <div class="portfolio-item">
-                    <div class="item-info">
-                        <div class="item-info__wrapper">
-                            <h3 class="item-info__title">Apa Blog</h3>
-                            <p class="item-info__category">Strona dla zagranicznego klienta</p>
-                            <a href="http://kmakowski.nazwa.pl/wp/" target="_blank"><i class="item-info__icon fa fa-search" aria-hidden="true"></i></a>
-                        </div>
-                    </div>
-                    <img class="item__image" src="img/sites/apablog.PNG">
-                </div>
-
-
-                <div class="portfolio-item">
-                    <div class="item-info">
-                        <div class="item-info__wrapper">
-                            <h3 class="item-info__title">Copyright D.G.</h3>
-                            <p class="item-info__category">Strona w której prezentuje najważniejsze teksty, które dotychczas napisałem</p>
-                            <a href="http://www.pazaak.stronazen.pl/copyright/" target="_blank"><i class="item-info__icon fa fa-search" aria-hidden="true"></i></a>
-                        </div>
-                    </div>
-                    <img class="item__image" src="img/sites/copyright.PNG">
-                </div>
-
-
-                <div class="portfolio-item">
-                    <div class="item-info">
-                        <div class="item-info__wrapper">
-                            <h3 class="item-info__title">Domy Opieki Polska</h3>
-                            <p class="item-info__category">Strona dla firmy reklamującej domy opieki</p>
-                            <a href="http://domyopiekipolska.pl/" target="_blank"><i class="item-info__icon fa fa-search" aria-hidden="true"></i></a>
-                        </div>
-                    </div>
-                    <img class="item__image" src="img/sites/domyopiekipolska.PNG">
-                </div>
-
-
-                <div class="portfolio-item">
-                    <div class="item-info">
-                        <div class="item-info__wrapper">
-                            <h3 class="item-info__title">Glass and Mirrors</h3>
-                            <p class="item-info__category">Strona sklepu dla zagranicznego klienta</p>
-                            <a href="http://www.bknyglassandmirror.com/p/home.html" target="_blank"><i class="item-info__icon fa fa-search" aria-hidden="true"></i></a>
-                        </div>
-                    </div>
-                    <img class="item__image" src="img/sites/glassandmirrors.PNG">
-                </div>
-
-
-                <div class="portfolio-item">
-                    <div class="item-info">
-                        <div class="item-info__wrapper">
-                            <h3 class="item-info__title">My Cinema Paradiso</h3>
-                            <p class="item-info__category">Strona Darka Kuźmy na której przedstawia swoje przemyślenia filmowe</p>
-                            <a href="http://mycinemaparadiso.com/" target="_blank"><i class="item-info__icon fa fa-search" aria-hidden="true"></i></a>
-                        </div>
-                    </div>
-                    <img class="item__image" src="img/sites/mycinemaparadiso.PNG">
-                </div>
-
-
-                <div class="portfolio-item">
-                    <div class="item-info">
-                        <div class="item-info__wrapper">
-                            <h3 class="item-info__title">PhotoShoot Space</h3>
-                            <p class="item-info__category">Strona zagranicznej firmy oferującej sprzęt fotograficzny do wynajęcia</p>
-                            <a href="http://www.space4photoshoots.com/" target="_blank"><i class="item-info__icon fa fa-search" aria-hidden="true"></i></a>
-                        </div>
-                    </div>
-                    <img class="item__image" src="img/sites/photoshoot.PNG">
-                </div>
-
-
-                <div class="portfolio-item">
-                    <div class="item-info">
-                        <div class="item-info__wrapper">
-                            <h3 class="item-info__title">Rehabphysio</h3>
-                            <p class="item-info__category">Strona rehabilitantki z Wielkiej Brytanii</p>
-                            <a href="http://rehabphysio.co.uk/" target="_blank"><i class="item-info__icon fa fa-search" aria-hidden="true"></i></a>
-                        </div>
-                    </div>
-                    <img class="item__image" src="img/sites/rehabphysio.PNG">
-                </div>
-
-
-                <div class="portfolio-item">
-                    <div class="item-info">
-                        <div class="item-info__wrapper">
-                            <h3 class="item-info__title">Dietetyk Równowaga</h3>
-                            <p class="item-info__category">Strona dietetyk z Głogowa</p>
-                            <a href="http://dietetyk-rownowaga.pl/" target="_blank"><i class="item-info__icon fa fa-search" aria-hidden="true"></i></a>
-                        </div>
-                    </div>
-                    <img class="item__image" src="img/sites/rownowagadietetyk.PNG">
-                </div>
-
-                <div class="portfolio-item">
-                    <div class="item-info">
-                        <div class="item-info__wrapper">
-                            <h3 class="item-info__title">Skrajnie Skończony blog</h3>
-                            <p class="item-info__category">Strona na której zapisuje swoje przemyślenia</p>
-                            <a href="http://www.pazaak.stronazen.pl/moj-blog/" target="_blank"><i class="item-info__icon fa fa-search" aria-hidden="true"></i></a>
-                        </div>
-                    </div>
-                    <img class="item__image" src="img/sites/skrajnieskonczony.PNG">
-                </div>
-
-                <div class="portfolio-item">
-                    <div class="item-info">
-                        <div class="item-info__wrapper">
-                            <h3 class="item-info__title">Zadanie testowe</h3>
-                            <p class="item-info__category">Które musiałem wykonać w ramach rekrutacji w krótkim terminie</p>
-                            <a href="http://www.pazaak.stronazen.pl/zadanie/1/" target="_blank"><i class="item-info__icon fa fa-search" aria-hidden="true"></i></a>
-                        </div>
-                    </div>
-                    <img class="item__image" src="img/sites/selement.png">
-                </div>
-                <div class="portfolio-item">
-                    <div class="item-info">
-                        <div class="item-info__wrapper">
-                            <h3 class="item-info__title">Miejsce na kolejny projekt</h3>
-                            <p class="item-info__category">i jego opis</p>
-                            <a href="" target=""><i class="item-info__icon fa fa-search" aria-hidden="true"></i></a>
-                        </div>
-                    </div>
-                    <img class="item__image" src="img/sites/services-photo-03.png">
-                </div>
-
-                <div class="portfolio-item">
-                    <div class="item-info">
-                        <div class="item-info__wrapper">
-                            <h3 class="item-info__title">Miejsce na kolejny projekt</h3>
-                            <p class="item-info__category">i jego opis</p>
-                            <a href="" target=""><i class="item-info__icon fa fa-search" aria-hidden="true"></i></a>
-                        </div>
-                    </div>
-                    <img class="item__image" src="img/sites/services-photo-04.png">
-                </div>
-            </div>
-
+        </div>
         </section>
 <div class="next-row">
 

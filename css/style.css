@@ -329,11 +329,11 @@ TABS
  PORTFOLIO
 *********************/
 
-.portfolio {
+.portfolio, cooperate  {
     padding: 0.8em 0 0;
 }
 
-.portfolio__header {
+.portfolio__header, .cooperate__header {
     font-size: 2.4em;
     font-weight: bold;
     text-align: center;
@@ -461,7 +461,7 @@ TABS
  MEDIA QUERIES
 *********************/
 @media(min-width: 200px) {
-.portfolio__header {
+.portfolio__header, .cooperate__header {
     font-size: 1.6em;
 }
 .tabcontent {
@@ -555,11 +555,11 @@ TABS
         border-left: 0;
         padding: 0;
     }
-    .portfolio__header {
+    .portfolio__header, .cooperate__header {
         font-size: 1.6em;
         text-align: left;
     }
-    .portfolio__header::after {
+    .portfolio__header::after, .cooperate__header::after {
         content: '';
         display: block;
         width: 83px;
