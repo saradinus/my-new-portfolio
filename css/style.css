@@ -267,7 +267,7 @@ COOPERATE
 .cooperate-item {
     display: flex;
 align-items: center;
-height: 300px;
+max-height: 100px;
 }
 /*********************
 TABS
@@ -739,7 +739,7 @@ TABS
         line-height: 4em;
     }
     .portfolio-item {
-        width: 33.3333%;
+        width: 50%;
         float: left;
     }
     .portfolio-item>.item-info {
@@ -749,10 +749,7 @@ TABS
     .portfolio-item:nth-child(2n+1) {
         clear: none;
     }
-    .portfolio-item:nth-child(3n+1) {
-        clear: left;
-    }
-    .services-item__container {
+      .services-item__container {
         padding: 25px 1em;
     }
     .services-item__wrapper {
